@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+.formularioPaso1{
+    margin-top: 3em;
+    padding: 0 15em 0 0;
+
+    &__documentoTitular{
+        position: relative;
+        margin-bottom: 1em;
+        & input{
+            @include etiquetaFormulario;
+            border-radius: 0 10px 10px 0;
+            border: solid 1px $bordes;
+            border-left: none;
+
+            &:placeholder-shown:focus{
+                position: relative;
+                top:0;
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Informacion from '../informacion/Informacion';
 import './Paginador.scss'
 import Login from '../login/Login';
+import Paso1 from '../pasos/Paso1';
 
 const Paginador = () => {
     return (
@@ -11,7 +12,7 @@ const Paginador = () => {
             </div>
 
             <div>
-                <Login />
+                <Paso1 />
             </div>
 
         </div>

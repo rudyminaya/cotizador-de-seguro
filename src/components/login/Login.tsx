@@ -1,4 +1,5 @@
 import React from 'react';
+import CampoDocumento from '../campo-documento/CampoDocumento';
 import Titulos from '../titulos/Titulos';
 import './Login.scss'
 
@@ -9,14 +10,7 @@ const Login = () => {
             <div>
                 <form className="formularioLogin">
 
-                    <select className="formularioLogin__dropdownDocuments" id="tipoDocumento" name="tipoDocumento">
-                        <option value="dni">DNI</option>
-                    </select>
-
-                    <div className="formularioLogin__nroDocumento">
-                        <input type="text" pattern="[0-9]{8}" required />
-                        <label>Nro de Documento</label>
-                    </div>
+                    <CampoDocumento />
 
                     <div className="formularioLogin__fechaNacimiento">
                         <input type="date" required />

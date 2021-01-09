@@ -1,18 +1,24 @@
 import React from 'react';
 import Migas from '../migas/Migas';
+import Titulos from '../titulos/Titulos';
+import './Paso1.scss'
 
 const Paso1 = () => {
     return (
         <div>
             <div>
                 <Migas />
-                <h1>Hola, <em>Pepito</em></h1>
-                <h3>Valida que los datos sean correctos</h3>
+                <Titulos tituloSimple="Hola, " tituloEnfasis="Pepito" textoApoyo="Valida que los datos sean correctos" />
             </div>
-            <form>
-                <select id="tipoDocumento" name="tipoDocumento">
-                    <option value="dni">DNI</option>
-                </select>
+            <form className="formularioPaso1">
+                <Titulos textoApoyo="Datos personales del titular" />
+                <div className="formularioPaso1__documentoTitular input-group mb-3">
+                    <select className="btn btn-outline-secondary dropdown-toggle">
+                        <option value="dni">DNI</option>
+                    </select>
+                    <input type="text" placeholder="Nombres" />
+                </div>
+
 
                 <label htmlFor="nroDocumentoTitular" />
                 <input id="nroDocumentoTitular" type="text" pattern="{8}" placeholder="Nro de Documento" required />

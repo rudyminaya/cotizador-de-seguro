@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.campoDocumento{
+    width: 100%;
+    &__dropdownDocuments{
+        @include etiquetaFormulario;
+        border-radius: 10px 0 0 10px;
+        appearance: none;
+        background-image: url(../../assets/down-arrow.png);
+        background-repeat: no-repeat;
+        background-position: 60px 23px;
+        background-size: 15px;
+        width: 6em;
+        cursor: pointer;
+    }
+
+    &__nroDocumento {
+        display: inline-block;
+        position: relative;
+        @include placeholderFlotante;
+
+        & input{
+            width: auto;
+            border-radius: 0 10px 10px 0;
+            border: solid 1px $bordes;
+            border-left: none;
+        }
+    }
+}
