@@ -1,53 +1,56 @@
 @import '../../index.scss';
 
-.contenedorInformacion{
+.contenedorInformacion {
     padding: 0;
     margin: 0;
-    background: linear-gradient(90deg, rgba(47,128,237,1) 80%, rgba(255,255,255,1) 20%);
+    background: linear-gradient(
+        90deg,
+        rgba(47, 128, 237, 1) 80%,
+        rgba(255, 255, 255, 1) 20%
+    );
 
-    & main{
+    & main {
         padding: 10em;
         margin: 0;
         background-image: url(../../assets/base.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
-        color:$color-negativo;
+        color: $color-negativo;
     }
 
-    &__tituloInfo{
+    &__tituloInfo {
         font-weight: 100;
         line-height: 1;
         font-size: 3rem;
 
-        &--enfasis{
+        &--enfasis {
             font-size: 3rem;
             font-weight: 400;
             padding-bottom: 0.5em;
         }
     }
 
-    &__features{
+    &__features {
         font-weight: 100;
         list-style: none;
         line-height: 3;
         display: flex;
         align-items: center;
-        
-        &--icono{
+
+        &--icono {
             padding-right: 0.5em;
             transform: scale(0.6);
         }
     }
 
-    &__copyright{
+    &__copyright {
         margin-top: 5em;
         color: $marcadeagua;
     }
-    &__sombra{
+    &__sombra {
         position: absolute;
         left: 38%;
-        top:20%
-        
+        top: 20%;
     }
 }

@@ -55,4 +55,16 @@
             align-self: center;
         }
     }
+    &__tituloPresentacion {
+        font-size: 1.5rem;
+        color: $color-texto;
+        line-height: 1;
+        margin-top: 1.5em;
+    }
+    &__tituloEnfasisPresentacion {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $color-principal;
+        margin-bottom: 1.5em;
+    }
 }

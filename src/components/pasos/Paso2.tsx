@@ -4,6 +4,7 @@ import Migas from '../elementos-de-ayuda/migas/Migas'
 import { TextoApoyo, Titulo } from '../elementos-de-ayuda/titulos/Titulos'
 import './Paso2.scss'
 import { PlanesBox } from '../planes/cajas-planes/PlanesBox'
+import { InformacionAdicional } from '../planes/detalles-planes/mas-informacion/InformacionAdicional'
 
 const Paso2 = () => {
     return (
@@ -27,6 +28,7 @@ const Paso2 = () => {
             </div>
             <div className="paso2__detallesdePlanes">
                 <DetallesPlanes />
+                <InformacionAdicional />
             </div>
         </div>
     )
