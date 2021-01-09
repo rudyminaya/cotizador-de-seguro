@@ -1,11 +1,11 @@
 import React from 'react'
-import CampoDocumento from '../campo-documento/CampoDocumento'
-import { CampoTexto } from '../campo-Texto/CampoTexto'
-import Migas from '../migas/Migas'
+import CampoDocumento from '../componentes-formulario/campo-documento/CampoDocumento'
+import { CampoTexto } from '../componentes-formulario/campo-Texto/CampoTexto'
+import Migas from '../elementos-de-ayuda/migas/Migas'
 import './Paso1.scss'
-import { Titulo, TextoApoyo } from '../titulos/Titulos'
-import { CampoRadio } from '../campoRadio/CampoRadio'
-import { BotonContinuar } from '../boton/Botones'
+import { Titulo, TextoApoyo } from '../elementos-de-ayuda/titulos/Titulos'
+import { CampoRadio } from '../componentes-formulario/campoRadio/CampoRadio'
+import { BotonContinuar } from '../elementos-de-ayuda/boton/Botones'
 
 const Paso1 = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Plan1 } from '../imagenes/Imagenes'
+import { Plan1 } from '../../elementos-de-ayuda/imagenes/'
 import './DetallesPlanes.scss'
 import { ListaBeneficios } from './lista-beneficios/ListaBeneficios'
 

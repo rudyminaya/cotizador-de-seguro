@@ -1,6 +1,6 @@
 import React from 'react'
-import CampoDocumento from '../campo-documento/CampoDocumento'
-import { TextoApoyo, Titulo } from '../titulos/Titulos'
+import CampoDocumento from '../componentes-formulario/campo-documento/CampoDocumento'
+import { TextoApoyo, Titulo } from '../elementos-de-ayuda/titulos/Titulos'
 
 import './Login.scss'
 
@@ -45,8 +45,7 @@ const Login = () => {
                     <button
                         className="formularioLogin__enviar"
                         type="submit"
-                        value="comencemos"
-                    >
+                        value="comencemos">
                         Comencemos
                     </button>
                 </form>

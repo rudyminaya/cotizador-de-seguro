@@ -1,9 +1,9 @@
 import React from 'react'
-import { PlanesBox } from '../cajas-planes/PlanesBox'
-import { DetallesPlanes } from '../detalles-planes/DetallesPlanes'
-import Migas from '../migas/Migas'
-import { TextoApoyo, Titulo } from '../titulos/Titulos'
+import { DetallesPlanes } from '../planes/detalles-planes/DetallesPlanes'
+import Migas from '../elementos-de-ayuda/migas/Migas'
+import { TextoApoyo, Titulo } from '../elementos-de-ayuda/titulos/Titulos'
 import './Paso2.scss'
+import { PlanesBox } from '../planes/cajas-planes/PlanesBox'
 
 const Paso2 = () => {
     return (

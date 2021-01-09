@@ -1,4 +1,4 @@
-@import '../../../index.scss';
+@import '../../../../index.scss';
 @mixin estiloCorazon {
     margin-right: 10px;
     vertical-align: middle;
@@ -14,6 +14,9 @@
             text-decoration: line-through;
         }
         &--incluye {
+            font-size: 1rem;
+        }
+        &--enfasis {
             font-size: 1.5rem;
             font-weight: 600;
         }

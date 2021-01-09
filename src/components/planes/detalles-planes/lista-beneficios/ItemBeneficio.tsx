@@ -1,6 +1,6 @@
 import React from 'react'
 import './ItemBeneficio.scss'
-import { FaHeart } from 'react-icons/fa'
+import { TiHeartFullOutline } from 'react-icons/ti'
 
 export const ItemBeneficio = (props) => {
     return (
@@ -8,16 +8,18 @@ export const ItemBeneficio = (props) => {
             <li
                 className={`itemBeneficio__detalle--${
                     props.estado ? 'incluye' : 'excluye'
-                }`}>
-                <FaHeart
+                } ${props.infoAdicional && 'itemBeneficio__detalle--enfasis'}`}>
+                <TiHeartFullOutline
                     className={`itemBeneficio__icono--${
                         props.estado ? 'incluye' : 'excluye'
                     }`}
                 />
                 {props.beneficio}
-                <span className="itemBeneficio__infoAdicional">
-                    {props.infoAdicional}
-                </span>
+                {props.infoAdicional && (
+                    <span className="itemBeneficio__infoAdicional">
+                        {props.infoAdicional}
+                    </span>
+                )}
             </li>
         </div>
     )
