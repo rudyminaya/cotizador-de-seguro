@@ -1,0 +1,35 @@
+@import '../../../index.scss';
+@mixin estiloCorazon {
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.itemBeneficio {
+    list-style: none;
+    line-height: 3;
+    &__detalle {
+        &--excluye {
+            color: $color-suave;
+            text-decoration: line-through;
+        }
+        &--incluye {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+    &__icono {
+        &--incluye {
+            color: $color-principal;
+            @include estiloCorazon();
+        }
+        &--excluye {
+            color: $color-suave;
+            @include estiloCorazon();
+        }
+    }
+    &__infoAdicional {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

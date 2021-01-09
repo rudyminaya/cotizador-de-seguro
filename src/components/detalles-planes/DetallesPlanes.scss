@@ -1,23 +1,27 @@
 @import '../../index.scss';
 
-.contenedorPrincipal {
-    background-color: $marcadeagua;
-    padding: 5px;
-    margin-top: 3em;
-    border-radius: 10px;
-
-    &__encabezado {
-        text-align: center;
-        font-weight: 600;
-        font-size: 1rem;
-        padding: 5px 0;
-        color: $color-texto;
+.detallesPlanes {
+    &__contenedor {
+        background-color: $marcadeagua;
+        padding: 5px;
+        margin-top: 3em;
+        border-radius: 10px;
+        &--encabezado {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 5px 0;
+            color: $color-texto;
+        }
     }
 }
-.contenedorInterno {
-    background-color: white;
-    padding: 2em 1em 2em 2em;
-    color: $color-texto;
+
+.detallesPlanes {
+    &__contenedorInterno {
+        background-color: white;
+        padding: 2em 1em 2em 2em;
+        color: $color-texto;
+    }
     &__resumenPlan {
         display: grid;
         grid-template-columns: 2fr 1fr;
