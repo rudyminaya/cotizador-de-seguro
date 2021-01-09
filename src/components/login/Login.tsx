@@ -1,30 +1,42 @@
 import React from 'react';
+import Titulos from '../titulos/Titulos';
+import './Login.scss'
 
 const Login = () => {
     return (
-        <div>
+        <div className="contenedorPrincipalLogin">
+            <Titulos tituloSimple="Obtén tu " tituloEnfasis="seguro ahora" textoApoyo="Ingresa los datos para comenzar" />
             <div>
-                <header>
-                    <h1>Obtén tu <em>seguro ahora</em></h1>
-                    <h3>Ingresa los datos para comenzar</h3>
-                </header>
-                <form>
-                    <select id="tipoDocumento" name="tipoDocumento">
+                <form className="formularioLogin">
+
+                    <select className="formularioLogin__dropdownDocuments" id="tipoDocumento" name="tipoDocumento">
                         <option value="dni">DNI</option>
                     </select>
 
-                    <label htmlFor="floatingInput nroDocumento">Nro de Documento</label>
-                    <input id="floatingInput nroDocumento" type="text" pattern="{8}" required />
+                    <div className="formularioLogin__nroDocumento">
+                        <input type="text" pattern="[0-9]{8}" required />
+                        <label>Nro de Documento</label>
+                    </div>
 
-                    <label htmlFor="fechaNacimiento" />
-                    <input id="floatingInput fechaNacimiento" placeholder="Fecha de nacimiento" type="date" required />
+                    <div className="formularioLogin__fechaNacimiento">
+                        <input type="date" required />
+                        <label>Fecha de Nacimiento</label>
+                    </div>
 
-                    <input type="checkbox" id="terminosyCondiciones" />
-                    <label htmlFor="terminosyCondiciones"> Acepto la <u>Política de Protección de Datos Personales y los Términos y Condiciones</u></label>
+                    <div className="formularioLogin__telefono">
+                        <input type="tel" required />
+                        <label>Celular</label>
+                    </div>
 
-                    <input type="checkbox" id="politicaComunicaciones" />
-                    <label htmlFor="politicaComunicaciones"> Acepto la <u>Política de Envío de Comunicaciones Comerciales</u></label>
-                    <input type="submit" value="comencemos" />
+                    <div className="formularioLogin__terms">
+                        <input type="checkbox" required />
+                        <label>Acepto la <u>Política de Protección de Datos Personales y los Términos y Condiciones</u></label>
+
+                        <input type="checkbox" required />
+                        <label>Acepto la <u>Política de Envío de Comunicaciones Comerciales</u></label>
+                    </div>
+
+                    <button className="formularioLogin__enviar" type="submit" value="comencemos">Comencemos</button>
                 </form>
             </div>
         </div >

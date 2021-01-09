@@ -13,6 +13,51 @@ code {
 $color-principal: #2f80ed;
 $color-check: #83cc5e;
 $color-negativo: #ffffff;
-$marcadeagua:#ffffff71;
+$marcadeagua:#ffffff98;
+$bordes:#c2c2c2;
 $color-texto:#494f66;
 $color-inactivo:#a3abcc;
+
+/* Aquí se define el estilo de las etiquetas en el formulario */
+@mixin etiquetaFormulario {
+  padding: 1em;
+  border-radius: 10px;
+  border: solid 1px $bordes;
+}
+
+@mixin placeholderFlotante{
+        position: relative;
+        margin-bottom: 1em;
+
+        & input{
+            @include etiquetaFormulario;
+            font-size: 1rem;
+            display: block;
+            width: 100%;
+            appearance: none;
+            color:transparent;
+
+            &:focus ~ label,
+            &:valid ~ label{
+                top: 0;
+                font-size: 14px;
+                color: $bordes;
+            }
+
+            &:focus,
+            &:valid{
+                color:$color-texto;
+            }
+        }
+
+        & label{
+            color: $color-texto;
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 1em;
+            bottom: 10px;
+            transition: 0.3s ease all;
+        }
+    }
