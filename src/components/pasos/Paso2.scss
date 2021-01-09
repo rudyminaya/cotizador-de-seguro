@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.paso2 {
+    margin: 0;
+    padding-right: 15em;
+
+    &__planesdeSeguro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0.8em;
+        margin-top: 3em;
+    }
+}

@@ -1,17 +1,17 @@
 @import '../../index.scss';
 
-.tituloSimple{
-    color:$color-texto;
+.tituloSimple {
+    color: $color-texto;
     font-size: 2rem;
     font-weight: 100;
-    
-    &__enfasis{
+
+    &__enfasis {
         color: $color-principal;
         font-weight: 600;
     }
 }
 
-.textoApoyo{
+.textoApoyo {
     margin-top: 1em;
     color: $color-texto;
     font-size: 1.2rem;

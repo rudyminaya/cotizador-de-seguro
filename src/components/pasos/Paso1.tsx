@@ -1,16 +1,17 @@
-import React from 'react';
-import CampoDocumento from '../campo-documento/CampoDocumento';
-import { CampoTexto } from '../campo-Texto/CampoTexto';
-import Migas from '../migas/Migas';
-import './Paso1.scss';
+import React from 'react'
+import CampoDocumento from '../campo-documento/CampoDocumento'
+import { CampoTexto } from '../campo-Texto/CampoTexto'
+import Migas from '../migas/Migas'
+import './Paso1.scss'
 import { Titulo, TextoApoyo } from '../titulos/Titulos'
-import { CampoRadio } from '../campoRadio/CampoRadio';
+import { CampoRadio } from '../campoRadio/CampoRadio'
+import { BotonContinuar } from '../boton/Botones'
 
 const Paso1 = () => {
     return (
         <div>
             <div>
-                <Migas />
+                <Migas paso="1" />
                 <Titulo tituloSimple="Hola, " tituloEnfasis="Pepito" />
                 <TextoApoyo textoApoyo="Valida que los datos sean correctos." />
             </div>
@@ -22,24 +23,42 @@ const Paso1 = () => {
                     <CampoTexto tipo="texto" nombreEtiqueta="Nombres" />
                     <CampoTexto tipo="text" nombreEtiqueta="Apellido Paterno" />
                     <CampoTexto tipo="text" nombreEtiqueta="Apellido Materno" />
-                    <CampoTexto tipo="date" nombreEtiqueta="Fecha de Nacimiento" />
+                    <CampoTexto
+                        tipo="date"
+                        nombreEtiqueta="Fecha de Nacimiento"
+                    />
                 </div>
 
                 <TextoApoyo textoApoyo="Género" />
 
-                <CampoRadio grupo="genero" valor="masculino" etiqueta="Masculino" />
-                <CampoRadio grupo="genero" valor="femenino" etiqueta="Femenino" />
+                <CampoRadio
+                    grupo="genero"
+                    campoID="masculino"
+                    etiqueta="Masculino"
+                />
+                <CampoRadio
+                    grupo="genero"
+                    campoID="femenino"
+                    etiqueta="Femenino"
+                />
 
                 <TextoApoyo textoApoyo="¿A quién vamos a asegurar" />
 
-                <CampoRadio grupo="asegurado" valor="me" etiqueta="Solo a mí" />
-                <CampoRadio grupo="asegurado" valor="me-familia" etiqueta="A mí y a mi familia" />
-
-                <button type="submit" disabled>continuar </button>
-
+                <CampoRadio
+                    grupo="asegurado"
+                    campoID="paraMi"
+                    etiqueta="Solo a mí"
+                />
+                <CampoRadio
+                    grupo="asegurado"
+                    campoID="familiayYo"
+                    etiqueta="A mí y a mi familia"
+                />
+                <div className="formularioPaso1__botonEnviar">
+                    <BotonContinuar tituloBoton="continuar" />
+                </div>
             </form>
         </div>
-
     )
 }
-export default Paso1;
+export default Paso1

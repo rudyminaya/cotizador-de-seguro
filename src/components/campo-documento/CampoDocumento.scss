@@ -1,11 +1,11 @@
 @import '../../index.scss';
 
-.campoDocumento{
+.campoDocumento {
     width: 100%;
     display: flex;
     margin: 1em 0;
 
-    &__dropdownDocuments{
+    &__dropdownDocuments {
         @include etiquetaFormulario;
         border-radius: 10px 0 0 10px;
         appearance: none;
@@ -23,7 +23,7 @@
         position: relative;
         @include placeholderFlotante;
 
-        & input{
+        & input {
             flex-grow: 1;
             border-radius: 0 10px 10px 0;
             border: solid 1px $color-suave;

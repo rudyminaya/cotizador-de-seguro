@@ -1,6 +1,6 @@
-import React from 'react';
-import CampoDocumento from '../campo-documento/CampoDocumento';
-import { TextoApoyo, Titulo } from '../titulos/Titulos';
+import React from 'react'
+import CampoDocumento from '../campo-documento/CampoDocumento'
+import { TextoApoyo, Titulo } from '../titulos/Titulos'
 
 import './Login.scss'
 
@@ -11,7 +11,6 @@ const Login = () => {
             <TextoApoyo textoApoyo="Ingresa los datos para comenzar" />
             <div>
                 <form className="formularioLogin">
-
                     <CampoDocumento />
 
                     <div className="formularioLogin__fechaNacimiento">
@@ -26,17 +25,34 @@ const Login = () => {
 
                     <div className="formularioLogin__terms">
                         <input type="checkbox" required />
-                        <label>Acepto la <u>Política de Protección de Datos Personales y los Términos y Condiciones</u></label>
+                        <label>
+                            Acepto la{' '}
+                            <u>
+                                Política de Protección de Datos Personales y los
+                                Términos y Condiciones
+                            </u>
+                        </label>
 
                         <input type="checkbox" required />
-                        <label>Acepto la <u>Política de Envío de Comunicaciones Comerciales</u></label>
+                        <label>
+                            Acepto la{' '}
+                            <u>
+                                Política de Envío de Comunicaciones Comerciales
+                            </u>
+                        </label>
                     </div>
 
-                    <button className="formularioLogin__enviar" type="submit" value="comencemos">Comencemos</button>
+                    <button
+                        className="formularioLogin__enviar"
+                        type="submit"
+                        value="comencemos"
+                    >
+                        Comencemos
+                    </button>
                 </form>
             </div>
-        </div >
-    );
+        </div>
+    )
 }
 
-export default Login;
+export default Login

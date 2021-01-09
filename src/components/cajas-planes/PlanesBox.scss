@@ -1,0 +1,78 @@
+@import '../../index.scss';
+@mixin estiloCheck {
+    font-size: 12px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: white;
+    border-radius: 50%;
+}
+@mixin estiloTexto {
+    color: $color-texto;
+    font-weight: 600;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.planbox {
+    &__contenedor {
+        &--activo {
+            border: 2px solid $color-check;
+            position: relative;
+            padding: 10px 10px;
+            margin: 0;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            cursor: pointer;
+            &::after {
+                content: '✔';
+                background-color: $color-check;
+                @include estiloCheck();
+            }
+        }
+        &--inactivo {
+            border: 2px solid $color-suave;
+            position: relative;
+            padding: 10px 10px;
+            margin: 0;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            cursor: pointer;
+            &::after {
+                content: '';
+                box-shadow: 0 0 2px $color-texto;
+                background-color: transparent;
+                @include estiloCheck();
+            }
+        }
+    }
+    &__nombrePlan {
+        @include estiloTexto();
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+    &__precioPlan {
+        @include estiloTexto();
+        font-size: 2rem;
+        & span {
+            vertical-align: middle;
+            font-size: 1rem;
+            margin: 0 3px 0 0;
+            padding-bottom: 10px;
+        }
+    }
+    &__periodoPlan {
+        font-size: 0.8rem;
+        align-self: flex-start;
+        font-weight: 600;
+        color: $color-texto;
+        text-transform: lowercase;
+    }
+}

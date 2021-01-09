@@ -1,20 +1,20 @@
 @import '../../index.scss';
 
-.breadcrumbs{
-    margin:2em 0;
-    color:$color-principal;
-    
-    &__backButton{
+.breadcrumbs {
+    margin: 2em 0;
+    color: $color-principal;
+
+    &__backButton {
         font-size: 1.5rem;
         margin-right: 0.5em;
     }
 
-    &__tituloPasoEnfasis{
+    &__tituloPasoEnfasis {
         font-weight: 600;
     }
 
-    &__tituloPasoSimple{
-        color:$color-suave;
+    &__tituloPasoSimple {
+        color: $color-suave;
         font-weight: 100;
     }
 }
