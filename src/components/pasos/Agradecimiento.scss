@@ -1,0 +1,24 @@
+@import '../../index.scss';
+
+.agradecimiento {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    &__content {
+        padding: 1.5em;
+        border-top: 2px solid $marcadeagua;
+    }
+    &__texto {
+        font-size: 1rem;
+        color: $color-texto;
+        font-weight: 100;
+    }
+    &__boton {
+        position: absolute;
+        margin-top: 2em;
+        align-self: flex-end;
+        right: 0;
+    }
+}

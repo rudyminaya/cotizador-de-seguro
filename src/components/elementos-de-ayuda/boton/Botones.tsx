@@ -13,3 +13,8 @@ export const BotonSimple = (props) => (
         {props.tituloBoton}
     </button>
 )
+export const BotonRetorno = (props) => (
+    <button className="btn btn-primary botonRetorno" type="button">
+        {props.tituloBoton}
+    </button>
+)

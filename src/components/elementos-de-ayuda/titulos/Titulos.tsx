@@ -10,3 +10,6 @@ export const Titulo = (props) => (
 export const TextoApoyo = (props) => (
     <h3 className="textoApoyo">{props.textoApoyo}</h3>
 )
+export const TextoApoyoEnfasis = (props) => (
+    <h3 className="textoApoyo__enfasis">{props.textoApoyoEnfasis}</h3>
+)
