@@ -1,12 +1,14 @@
 import React from 'react';
 import CampoDocumento from '../campo-documento/CampoDocumento';
-import Titulos from '../titulos/Titulos';
+import { TextoApoyo, Titulo } from '../titulos/Titulos';
+
 import './Login.scss'
 
 const Login = () => {
     return (
         <div className="contenedorPrincipalLogin">
-            <Titulos tituloSimple="Obtén tu " tituloEnfasis="seguro ahora" textoApoyo="Ingresa los datos para comenzar" />
+            <Titulo tituloSimple="Obtén tu " tituloEnfasis="seguro ahora" />
+            <TextoApoyo textoApoyo="Ingresa los datos para comenzar" />
             <div>
                 <form className="formularioLogin">
 

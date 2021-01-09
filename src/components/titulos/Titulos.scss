@@ -4,14 +4,16 @@
     color:$color-texto;
     font-size: 2rem;
     font-weight: 100;
+    
     &__enfasis{
-        color:$color-principal;
+        color: $color-principal;
         font-weight: 600;
     }
 }
 
 .textoApoyo{
-    color:$color-texto;
+    margin-top: 1em;
+    color: $color-texto;
     font-size: 1.2rem;
     opacity: 0.8;
 }

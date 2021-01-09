@@ -1,0 +1,6 @@
+@import '../../index.scss';
+
+.campoTexto{
+    margin: 1em 0;
+    @include placeholderFlotante;
+}

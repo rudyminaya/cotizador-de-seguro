@@ -19,14 +19,14 @@
         display: grid;
         grid-template-columns: 1fr 8fr;
         margin-top: 3em;
-        color: $bordes;
+        color: $color-suave;
         font-size: 0.8rem;
         row-gap: 1em;
         
         & input{
             justify-self: start;
             align-self: center;
-            border: solid 1px $bordes;            
+            border: solid 1px $color-suave;            
         }
         & label{
             justify-self: start;

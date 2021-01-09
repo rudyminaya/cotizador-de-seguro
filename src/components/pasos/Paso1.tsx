@@ -1,52 +1,42 @@
 import React from 'react';
+import CampoDocumento from '../campo-documento/CampoDocumento';
+import { CampoTexto } from '../campo-Texto/CampoTexto';
 import Migas from '../migas/Migas';
-import Titulos from '../titulos/Titulos';
-import './Paso1.scss'
+import './Paso1.scss';
+import { Titulo, TextoApoyo } from '../titulos/Titulos'
+import { CampoRadio } from '../campoRadio/CampoRadio';
 
 const Paso1 = () => {
     return (
         <div>
             <div>
                 <Migas />
-                <Titulos tituloSimple="Hola, " tituloEnfasis="Pepito" textoApoyo="Valida que los datos sean correctos" />
+                <Titulo tituloSimple="Hola, " tituloEnfasis="Pepito" />
+                <TextoApoyo textoApoyo="Valida que los datos sean correctos." />
             </div>
             <form className="formularioPaso1">
-                <Titulos textoApoyo="Datos personales del titular" />
-                <div className="formularioPaso1__documentoTitular input-group mb-3">
-                    <select className="btn btn-outline-secondary dropdown-toggle">
-                        <option value="dni">DNI</option>
-                    </select>
-                    <input type="text" placeholder="Nombres" />
+                <TextoApoyo textoApoyo="Datos personales del titular" />
+
+                <div className="formularioPaso1__form">
+                    <CampoDocumento />
+                    <CampoTexto tipo="texto" nombreEtiqueta="Nombres" />
+                    <CampoTexto tipo="text" nombreEtiqueta="Apellido Paterno" />
+                    <CampoTexto tipo="text" nombreEtiqueta="Apellido Materno" />
+                    <CampoTexto tipo="date" nombreEtiqueta="Fecha de Nacimiento" />
                 </div>
 
+                <TextoApoyo textoApoyo="Género" />
 
-                <label htmlFor="nroDocumentoTitular" />
-                <input id="nroDocumentoTitular" type="text" pattern="{8}" placeholder="Nro de Documento" required />
+                <CampoRadio grupo="genero" valor="masculino" etiqueta="Masculino" />
+                <CampoRadio grupo="genero" valor="femenino" etiqueta="Femenino" />
 
-                <label htmlFor="nombresTitular" />
-                <input id="nombresTitular" type="text" />
+                <TextoApoyo textoApoyo="¿A quién vamos a asegurar" />
 
-                <label htmlFor="apellidosTitular" />
-                <input id="apellidosTitular" type="text" />
+                <CampoRadio grupo="asegurado" valor="me" etiqueta="Solo a mí" />
+                <CampoRadio grupo="asegurado" valor="me-familia" etiqueta="A mí y a mi familia" />
 
-                <label htmlFor="nacimientoTitular" />
-                <input id="nacimientoTitular" type="date" />
+                <button type="submit" disabled>continuar </button>
 
-                <h3>Género</h3>
-
-                <input type="radio" id="masculino" name="genero" value="masculino" />
-                <label htmlFor="masculino">Masculino</label>
-
-                <input type="radio" id="Femenino" name="gender" value="Femenino" />
-                <label htmlFor="Femenino">Femenino</label>
-
-                <h3>¿A quién vamos a Asegurar?</h3>
-
-                <input type="radio" id="me" name="me" value="me" />
-                <label htmlFor="me">Solo a mí</label>
-
-                <input type="radio" id="Femenino" name="gender" value="Femenino" />
-                <label htmlFor="Femenino">A mí y a mi familia</label>
             </form>
         </div>
 

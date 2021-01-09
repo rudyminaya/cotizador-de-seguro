@@ -2,6 +2,9 @@
 
 .campoDocumento{
     width: 100%;
+    display: flex;
+    margin: 1em 0;
+
     &__dropdownDocuments{
         @include etiquetaFormulario;
         border-radius: 10px 0 0 10px;
@@ -15,14 +18,15 @@
     }
 
     &__nroDocumento {
-        display: inline-block;
+        display: flex;
+        flex-grow: 1;
         position: relative;
         @include placeholderFlotante;
 
         & input{
-            width: auto;
+            flex-grow: 1;
             border-radius: 0 10px 10px 0;
-            border: solid 1px $bordes;
+            border: solid 1px $color-suave;
             border-left: none;
         }
     }
