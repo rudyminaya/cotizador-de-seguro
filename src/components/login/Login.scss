@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .contenedorPrincipalLogin {
-    padding: 10em 15em 0 0;
+    padding-top: 10em;
 }
 
 .formularioLogin {
@@ -24,9 +24,21 @@
         row-gap: 1em;
 
         & input {
-            justify-self: start;
-            align-self: center;
-            border: solid 1px $color-suave;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            box-shadow: inset 0 0 2px $color-texto;
+            border-radius: 10%;
+            position: relative;
+
+            &:checked {
+                content: '';
+                background-image: url(../../assets/check.png);
+                font-size: 15px;
+                color: white;
+                font-weight: 700;
+                background-color: $color-check;
+            }
         }
         & label {
             justify-self: start;
