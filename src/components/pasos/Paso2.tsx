@@ -75,6 +75,7 @@ const Paso2 = (props) => {
                 {planes.map((plan, indice) => {
                     return (
                         <PlanesBox
+                            key={`plan-${indice}`}
                             estado={indiceDePlanSeleccionado === indice}
                             nombrePlan={plan.nombre}
                             precioPlan={plan.mensualidad}

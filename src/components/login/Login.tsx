@@ -4,6 +4,7 @@ import { CampoTexto } from '../componentes-formulario/campo-Texto/CampoTexto'
 import validator from 'validator'
 import { TextoApoyo, Titulo } from '../elementos-de-ayuda/titulos/Titulos'
 import './Login.scss'
+import { CampoCheckbox } from '../componentes-formulario/campo-checkbox/CampoCheckbox'
 
 const Login = (props) => {
     const [validaciones, setValidaciones] = useState({
@@ -112,36 +113,22 @@ const Login = (props) => {
                         tipo="tel"
                         nombreEtiqueta="Celular"
                     />
-
-                    <div className="formularioLogin__terms">
-                        <input
-                            id="terms1"
+                    <div className="formularioLogin__terminos">
+                        <CampoCheckbox
+                            idTerms="terms1"
                             onClick={validaCampo}
-                            type="checkbox"
-                            required
+                            mensaje="Acepto la"
+                            mensajeEnlazado="Política de Protección de Datos Personales y los
+                                Términos y Condiciones"
                         />
-                        <label>
-                            Acepto la 
-                            <u>
-                                Política de Protección de Datos Personales y los
-                                Términos y Condiciones
-                            </u>
-                        </label>
 
-                        <input
-                            id="terms2"
+                        <CampoCheckbox
+                            idTerms="terms2"
                             onClick={validaCampo}
-                            type="checkbox"
-                            required
+                            mensaje="Acepto la"
+                            mensajeEnlazado="Política de Envío de Comunicaciones Comerciales"
                         />
-                        <label>
-                            Acepto la 
-                            <u>
-                                Política de Envío de Comunicaciones Comerciales
-                            </u>
-                        </label>
                     </div>
-
                     <button
                         className="btn formularioLogin__enviar"
                         type="submit"

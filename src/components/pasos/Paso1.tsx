@@ -147,7 +147,6 @@ const Paso1 = (props) => {
         let valores = Object.values(validaciones)
         let algunaValidacionNoCumple = valores.includes(false)
         setPuedeContinuar(!algunaValidacionNoCumple)
-        console.log(validaciones)
     }, [validaciones])
 
     return (

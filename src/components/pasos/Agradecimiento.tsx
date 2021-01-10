@@ -17,7 +17,7 @@ const Agradecimiento = () => {
                     siguientes <strong>48 horas</strong>
                 </h3>
                 <div className="agradecimiento__boton">
-                    <a href="https://rimac.com">
+                    <a href="https://www.rimac.com/salud/seguro-salud">
                         <BotonRetorno tituloBoton="IR A SALUD" />
                     </a>
                 </div>

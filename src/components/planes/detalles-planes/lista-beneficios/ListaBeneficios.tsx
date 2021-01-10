@@ -7,6 +7,7 @@ export const ListaBeneficios = (props) => {
             {props.beneficios.map((cobertura, indice) => {
                 return (
                     <ItemBeneficio
+                        key={`beneficio-${indice}`}
                         estado={props.seleccionados.includes(indice)}
                         beneficio={cobertura.titulo}
                         infoAdicional={cobertura.textoApoyo}
