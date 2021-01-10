@@ -121,7 +121,7 @@ const Login = (props) => {
                             required
                         />
                         <label>
-                            Acepto la
+                            Acepto la 
                             <u>
                                 Política de Protección de Datos Personales y los
                                 Términos y Condiciones
@@ -135,7 +135,7 @@ const Login = (props) => {
                             required
                         />
                         <label>
-                            Acepto la
+                            Acepto la 
                             <u>
                                 Política de Envío de Comunicaciones Comerciales
                             </u>

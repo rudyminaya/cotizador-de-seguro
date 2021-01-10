@@ -35,7 +35,7 @@ const Paso2 = (props) => {
             id: '4',
             nombre: 'full',
             mensualidad: '500',
-            montoCobertura: '10',
+            montoCobertura: '12',
             beneficios: [0, 1, 2, 3, 4, 5],
         },
     ]
