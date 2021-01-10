@@ -10,7 +10,10 @@ export const CampoRadio = (props) => {
                     type="radio"
                     id={props.campoId}
                     name={props.grupo}
-                    value={props.campoID}
+                    checked={props.checked}
+                    onChange={props.onChange}
+                    ref={(el) => props.modificador(el)}
+                    required
                 />
                 {props.etiqueta}
             </label>

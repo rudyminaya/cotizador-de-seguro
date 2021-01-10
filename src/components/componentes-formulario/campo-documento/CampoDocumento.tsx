@@ -7,7 +7,8 @@ const CampoDocumento = (props) => {
             <select
                 className="campoDocumento__dropdownDocuments"
                 id="tipoDocumento"
-                name="tipoDocumento">
+                name="tipoDocumento"
+                disabled={props.disabled || false}>
                 <option value="dni">DNI</option>
             </select>
 

@@ -8,24 +8,24 @@ export const DetallesPlanes = (props) => {
         /* Contenedor Principal */
         <div>
             <main className="detallesPlanes__contenedor">
-                <h1 className="detallesPlanes__contenedor--encabezado">
+                <h1 className="detallesPlanes__encabezado">
                     Cuentas con estos beneficios:
                 </h1>
                 {/* Contenedor de Informacion */}
                 <div className="detallesPlanes__contenedorInterno">
                     <section className="detallesPlanes__resumenPlan">
                         <div>
-                            <h3 className="detallesPlanes__resumenPlan--cobertura">
+                            <h3 className="detallesPlanes__cobertura">
                                 Cobertura Máxima
                             </h3>
-                            <h1 className="detallesPlanes__resumenPlan--montoCobertura">
+                            <h1 className="detallesPlanes__montoCobertura">
                                 S/1MM
                             </h1>
-                            <span className="rounded-pill detallesPlanes__resumenPlan--tipodePlan">
+                            <span className="rounded-pill detallesPlanes__tipodePlan">
                                 PLAN BÁSICO
                             </span>
                         </div>
-                        <Plan1 className="detallesPlanes__resumenPlan--imagen" />
+                        <Plan1 className="detallesPlanes__imagen" />
                     </section>
 
                     <section className="detallesPlanes__listaBeneficios">

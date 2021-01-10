@@ -6,13 +6,13 @@
         padding: 5px;
         margin-top: 3em;
         border-radius: 10px;
-        &--encabezado {
-            text-align: center;
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 5px 0;
-            color: $color-texto;
-        }
+    }
+    &__encabezado {
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 5px 0;
+        color: $color-texto;
     }
 }
 
@@ -31,29 +31,29 @@
         & div {
             border-right: solid 2px $marcadeagua;
         }
-        &--cobertura {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        &--montoCobertura {
-            font-size: 2rem;
-            margin: 0.5em 0;
-        }
-        &--tipodePlan {
-            color: white;
-            background-color: $color-check;
-            border-radius: 10%;
-            padding: 5px 10px;
-            border: none;
-            font-size: 0.8rem;
-            margin-top: 1em;
-            font-weight: 600;
-        }
-        &--imagen {
-            max-width: 80px;
-            justify-self: center;
-            align-self: center;
-        }
+    }
+    &__cobertura {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    &__montoCobertura {
+        font-size: 2rem;
+        margin: 0.5em 0;
+    }
+    &__tipodePlan {
+        color: white;
+        background-color: $color-check;
+        border-radius: 10%;
+        padding: 5px 10px;
+        border: none;
+        font-size: 0.8rem;
+        margin-top: 1em;
+        font-weight: 600;
+    }
+    &__imagen {
+        max-width: 80px;
+        justify-self: center;
+        align-self: center;
     }
     &__tituloPresentacion {
         font-size: 1.5rem;

@@ -3,7 +3,10 @@ import './Botones.scss'
 import { FaAngleRight } from 'react-icons/fa'
 
 export const BotonContinuar = (props) => (
-    <button className="btn btn-primary botones" type="submit" disabled>
+    <button
+        className="btn btn-primary botones"
+        type="submit"
+        disabled={props.disabled}>
         {props.tituloBoton}
         <FaAngleRight className="icono" />
     </button>
