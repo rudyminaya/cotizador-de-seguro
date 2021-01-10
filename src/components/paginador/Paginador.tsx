@@ -21,7 +21,7 @@ const Paginador = () => {
             </div>
 
             <div className="paginador__derecha">
-                <Login />
+                <Paso2 />
             </div>
         </div>
     )

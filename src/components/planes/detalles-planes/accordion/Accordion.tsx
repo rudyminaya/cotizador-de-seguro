@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaAngleDown } from 'react-icons/fa'
+import { FaAngleUp } from 'react-icons/fa'
 import './Accordion.scss'
 
 export const Accordion = (props) => {
@@ -19,7 +19,7 @@ export const Accordion = (props) => {
                                 aria-controls={`collapse-${props.id}`}>
                                 {props.tituloAccordion}
                             </button>
-                            <FaAngleDown
+                            <FaAngleUp
                                 className="accordion__icono collapsed"
                                 data-toggle="collapse"
                                 data-target={`#collapse-${props.id}`}

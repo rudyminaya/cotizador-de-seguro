@@ -17,7 +17,7 @@ $color-check: #83cc5e;
 $color-negativo: #ffffff;
 $marcadeagua: #f0f0f0;
 $color-suave: #c2c2c2;
-$color-texto: #494f66;
+$color-texto: #525668;
 $color-inactivo: #a3abcc;
 
 /* Aquí se define el estilo de las etiquetas en el formulario */
@@ -35,6 +35,9 @@ $color-inactivo: #a3abcc;
         font-size: 1rem;
         display: block;
         width: 100%;
+        font-size: 1.2rem;
+        color: $color-texto;
+        font-weight: 600;
         appearance: none;
         color: transparent;
 

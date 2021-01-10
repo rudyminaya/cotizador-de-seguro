@@ -35,7 +35,7 @@ const Login = (props) => {
         }
     }
     return (
-        <div className="contenedorPrincipalLogin">
+        <div className="login">
             <Titulo tituloSimple="Obtén tu " tituloEnfasis="seguro ahora" />
             <TextoApoyo textoApoyo="Ingresa los datos para comenzar" />
             <div>

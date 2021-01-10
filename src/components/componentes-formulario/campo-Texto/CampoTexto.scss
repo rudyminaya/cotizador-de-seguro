@@ -3,4 +3,10 @@
 .campoTexto {
     margin: 1em 0;
     @include placeholderFlotante;
+    & input[type='date']::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        background-image: url(../../../assets/calendar-alt-solid.png);
+        border-radius: 4px;
+        margin-right: 2px;
+    }
 }

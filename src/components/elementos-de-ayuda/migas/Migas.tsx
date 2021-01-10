@@ -4,10 +4,10 @@ import './Migas.scss'
 
 const Migas = (props) => {
     return (
-        <div className="breadcrumbs">
-            <AiOutlineLeftCircle className="breadcrumbs__backButton" />
-            <span className="breadcrumbs__tituloPasoEnfasis">{`Paso ${props.paso} `}</span>{' '}
-            <span className="breadcrumbs__tituloPasoSimple">de 7</span>
+        <div className="migas">
+            <AiOutlineLeftCircle className="migas__backButton" />
+            <span className="migas__tituloPasoEnfasis">{`Paso ${props.paso} `}</span>{' '}
+            <span className="migas__tituloPasoSimple">de 7</span>
         </div>
     )
 }

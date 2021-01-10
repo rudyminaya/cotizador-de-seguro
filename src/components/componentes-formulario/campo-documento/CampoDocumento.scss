@@ -20,6 +20,7 @@
         position: relative;
         @include placeholderFlotante;
         & input {
+            font-size: 1.2rem;
             flex-grow: 1;
             border-radius: 0 10px 10px 0;
             border: solid 1px $color-suave;
