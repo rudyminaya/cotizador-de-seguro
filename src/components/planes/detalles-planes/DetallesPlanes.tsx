@@ -1,5 +1,5 @@
 import React from 'react'
-import { Plan1 } from '../../elementos-de-ayuda/imagenes/'
+import { Plan1, Plan2, Plan3, Plan4 } from '../../elementos-de-ayuda/imagenes/'
 import './DetallesPlanes.scss'
 import { ListaBeneficios } from './lista-beneficios/ListaBeneficios'
 
@@ -19,17 +19,31 @@ export const DetallesPlanes = (props) => {
                                 Cobertura Máxima
                             </h3>
                             <h1 className="detallesPlanes__montoCobertura">
-                                S/1MM
+                                {`S/${props.montoCobertura}MM`}
                             </h1>
                             <span className="rounded-pill detallesPlanes__tipodePlan">
-                                PLAN BÁSICO
+                                {`plan ${props.nombre}`}
                             </span>
                         </div>
-                        <Plan1 className="detallesPlanes__imagen" />
+                        {props.id === '1' && (
+                            <Plan1 className="detallesPlanes__imagen" />
+                        )}
+                        {props.id === '2' && (
+                            <Plan2 className="detallesPlanes__imagen" />
+                        )}
+                        {props.id === '3' && (
+                            <Plan3 className="detallesPlanes__imagen" />
+                        )}
+                        {props.id === '4' && (
+                            <Plan4 className="detallesPlanes__imagen" />
+                        )}
                     </section>
 
                     <section className="detallesPlanes__listaBeneficios">
-                        <ListaBeneficios />
+                        <ListaBeneficios
+                            seleccionados={props.beneficios}
+                            beneficios={props.listaDeBeneficios}
+                        />
                     </section>
                 </div>
             </main>

@@ -1,23 +1,18 @@
 import React from 'react'
 import { ItemBeneficio } from './ItemBeneficio'
 
-export const ListaBeneficios = () => {
+export const ListaBeneficios = (props) => {
     return (
         <div>
-            <ItemBeneficio
-                estado={true}
-                beneficio="Lima "
-                infoAdicional="(zona de cobertura)"
-            />
-            <ItemBeneficio
-                estado={true}
-                beneficio="+30 clínicas "
-                infoAdicional="(en red afiliada)"
-            />
-            <ItemBeneficio estado={false} beneficio="Médico a Domicilio" />
-            <ItemBeneficio estado={false} beneficio="Chequeos preventivos" />
-            <ItemBeneficio estado={false} beneficio="Reembolso nacional" />
-            <ItemBeneficio estado={false} beneficio="Reembolso internacional" />
+            {props.beneficios.map((cobertura, indice) => {
+                return (
+                    <ItemBeneficio
+                        estado={props.seleccionados.includes(indice)}
+                        beneficio={cobertura.titulo}
+                        infoAdicional={cobertura.textoApoyo}
+                    />
+                )
+            })}
         </div>
     )
 }

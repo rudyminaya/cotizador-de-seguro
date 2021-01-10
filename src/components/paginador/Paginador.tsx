@@ -9,6 +9,7 @@ import Agradecimiento from '../pasos/Agradecimiento'
 const Paginador = () => {
     const [credenciales, setCredenciales] = useState(null)
     const [paso, setPaso] = useState(0)
+    const [planSeleccionado, setPlanSeleccionado] = useState(null)
     const [datosPersonales, setDatosPersonales] = useState({
         valores: null,
         continuar: false,
@@ -53,6 +54,12 @@ const Paginador = () => {
         }
     }, [datosPersonales])
 
+    useEffect(() => {
+        if (planSeleccionado) {
+            setPaso(3)
+        }
+    }, [planSeleccionado])
+
     return (
         <div className="paginador">
             <div className="paginador__izquierda">
@@ -67,7 +74,7 @@ const Paginador = () => {
                         datosPersonales={datosPersonales}
                     />
                 )}
-                {paso === 2 && <Paso2 />}
+                {paso === 2 && <Paso2 planElegido={setPlanSeleccionado} />}
                 {paso === 3 && <Agradecimiento />}
             </div>
         </div>

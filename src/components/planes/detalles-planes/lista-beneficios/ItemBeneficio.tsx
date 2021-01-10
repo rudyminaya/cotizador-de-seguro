@@ -14,7 +14,7 @@ export const ItemBeneficio = (props) => {
                         props.estado ? 'incluye' : 'excluye'
                     }`}
                 />
-                {props.beneficio}
+                {`${props.beneficio} `}
                 {props.infoAdicional && (
                     <span className="itemBeneficio__infoAdicional">
                         {props.infoAdicional}

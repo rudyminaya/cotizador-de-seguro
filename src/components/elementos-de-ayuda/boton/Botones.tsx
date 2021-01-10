@@ -12,12 +12,22 @@ export const BotonContinuar = (props) => (
     </button>
 )
 export const BotonSimple = (props) => (
-    <button className="btn btn-primary botones" type="submit" disabled>
+    <button
+        className="btn btn-primary botones"
+        onClick={props.onClick}
+        type="submit"
+        disabled={props.disabled}>
         {props.tituloBoton}
     </button>
 )
 export const BotonRetorno = (props) => (
     <button className="btn btn-primary botonRetorno" type="button">
+        {props.tituloBoton}
+    </button>
+)
+
+export const BotonCorreo = (props) => (
+    <button className="btn botonCorreo" type="button">
         {props.tituloBoton}
     </button>
 )

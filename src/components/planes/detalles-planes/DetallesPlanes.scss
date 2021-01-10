@@ -41,6 +41,7 @@
         margin: 0.5em 0;
     }
     &__tipodePlan {
+        text-transform: uppercase;
         color: white;
         background-color: $color-check;
         border-radius: 10%;

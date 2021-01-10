@@ -9,4 +9,10 @@
         column-gap: 0.5em;
         margin-top: 3em;
     }
+    &__botones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        margin-bottom: 5em;
+    }
 }
