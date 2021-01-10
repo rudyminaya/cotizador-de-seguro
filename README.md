@@ -15,7 +15,7 @@ Luego, usaré node-sass para que react pueda interpretar mis archivos .scss.
 
 ```bash
 sudo apt-get update
-sudo apt-get install build-essential
+sudo apt-get install build-essential python
 npm install
 npm rebuild node-sass
 npm start
